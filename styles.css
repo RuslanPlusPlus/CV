@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* * - all elements */
+
+/* * {
+  padding: 4;
+} */
+
+body {
+  background-color: #f2f2f2;
+  color: #0f141e;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+/* links style */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+.avatar {
+  width: 260px;
+  border-radius: 32%;
+  box-shadow: 4px 4px 22px rgba(233, 191, 6, 0.863);
+  /* float: left; */
+}
+
+.info {
+  display: flex;
+  border: 5px rgb(238, 238, 38);
+  /* border-style: dotted; */
+  /* padding-bottom: 100px; */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+  }
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.info-text h3 {
+  margin-bottom: 10px;
+}
+
+.info p {
+  color: #86898f;
+  margin: 0;
+  font-style: italic;
+  text-decoration: none;
+  /* text-transform: capitalize; */
+  /* letter-spacing: 5px; */
+  /* word-spacing: 15px; */
+}
+
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-green {
+  background: #e5fff7;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+/* 0 - top and bottom, 20 - left and right */
+.list {
+  padding: 0 20px;
+}
+
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Box model */
+.social {
+  background: wheat;
+  padding: 10px;
+  /* padding variants */
+  /* padding-top: ; */
+  /* padding-left: ; */
+  /* padding-right: ; */
+  /* padding-bottom: ; */
+  /* padding: 15px 40px; */
+  border: 5px rgb(238, 238, 38);
+  border-style: dashed;
+  border-bottom-width: 4px;
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+}
+
+.table td {
+  padding-bottom: 7px;
+}
+
+/* pseudo-selectors */
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: #86898f;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  padding: 15px 0 10px;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row > .form-group {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  background: black;
+  padding: 15px 20px;
+  color: white;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+/* .table tr:nth-child(even) {
+  background: chartreuse;
+} */
+
+/* > means that only dauther divs of .box-model (on one level) will be affected */
+
+/* .box-model > div {
+  background: violet;
+  height: 200px;
+  width: 25%;
+  float: left;
+  border: 5px solid crimson;
+  box-sizing: border-box;
+} */
+
+/* border-box considers the size of borders so that all divs fit in page width (if they fit in without borders)*/
+
+/*              POSITION */
+
+.position {
+  position: relative;
+  border: 4px solid black;
+  margin-top: 20px;
+  padding: 20px;
+  height: 300px;
+}
+
+/* By default position: static */
+/* position:absolute allows to move element */
+.box {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+  background: lightcoral;
+}

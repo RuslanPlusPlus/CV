@@ -3,122 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <title>Ruslan Niadzvetski CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- image url -->
-    <!-- <img
-      src="https://sun9-51.userapi.com/impf/c850220/v850220194/1a1f8b/K7N12n0fYK0.jpg?size=720x960&quality=96&sign=2ae9045c3f4ec4a6e2c03de3f78218bb&type=album"
-      width="200"
-      alt="Here is my avatar"
-    /> -->
-    <!-- image local -->
+    <div class="container">
+      <div class="info">
+        <img class="avatar" src="avatar.jpg" alt="Here is my avatar" />
 
-    <table cellspacing="15">
-      <tr>
-        <td><img src="avatar.jpg" alt="Here is my avatar" width="200" /></td>
-        <td>
+        <div class="info-text">
           <h1>Руслан Недведский</h1>
 
+          <p>Студент 4 курса</p>
           <p>
-            <em>Студент 4 кураса и <strong>начинающий программист</strong></em>
+            <strong>Начинающий программист</strong>
           </p>
-        </td>
-      </tr>
-    </table>
+          <h3>Мои социальные сети</h3>
+          <a href="https://t.me/RusNed05" target="_blank">telegram</a>
+          |
+          <a href="https://vk.com/rusned05" target="_blank">vk</a>
 
-    <hr size="4" color="yellow" />
+          <!-- <ul class="link-list">
+            <li>
+              <a href="https://t.me/RusNed05" target="_blank">telegram</a>
+            </li>
+            <li><a href="https://vk.com/rusned05" target="_blank">vk</a></li>
+          </ul> -->
+        </div>
+      </div>
 
-    <h2>Мои социальные сети</h2>
-    <!-- Unordered list -->
-    <ul type="circle">
-      <li><a href="https://t.me/RusNed05" target="_blank">telegram</a></li>
-      <li><a href="https://vk.com/rusned05" target="_blank">vk</a></li>
-    </ul>
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Иностранный язык</li>
+          <li>Спорт: настольный теннис, волейбол, воркаут</li>
+          <li>История</li>
+        </ol>
+      </div>
 
-    <hr size="4" width="300" color="yellow" align="left" />
+      <div class="card bg-red">
+        <h2>Мои навыки</h2>
+        <ul class="list">
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SQL</li>
+          <li>English B1-B2</li>
+        </ul>
+      </div>
 
-    <!-- Ordered list -->
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Иностранный язык</li>
-      <li>Спорт: настольный теннис, волейбол, воркаут</li>
-      <li>История</li>
-    </ol>
+      <div class="card bg-green">
+        <h2>Курсы и тренинги</h2>
+        <!-- border is depreacated -->
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Организация</th>
+              <th>Направление</th>
+            </tr>
+          </thead> -->
 
-    <hr size="4" width="300" color="yellow" align="left" />
+          <tr>
+            <td>Epam</td>
+            <td>Java Web Training</td>
+          </tr>
 
-    <h2>Мои навыки</h2>
-    <a href="skills.html" target="_blank">Смотреть здесь</a>
+          <tr>
+            <td>Epam</td>
+            <td>Java Lab</td>
+          </tr>
+        </table>
+      </div>
 
-    <hr size="4" width="300" color="yellow" align="left" />
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Организация</th>
+              <th scope="col">Должность</th>
+              <th scope="col">Период</th>
+            </tr>
+          </thead>
 
-    <h2>Курсы и тренинги</h2>
-    <!-- border is depreacated -->
-    <table border="2">
-      <thead>
-        <tr>
-          <th>Организация</th>
-          <th>Направление</th>
-        </tr>
-      </thead>
+          <tbody>
+            <tr>
+              <td>Epam</td>
+              <td>Junior Software Engineer</td>
+              <td>01.11.2021 - Текущий день</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <tbody>
-        <tr>
-          <td>Epam</td>
-          <td>Java Web Training</td>
-        </tr>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form>
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input
+                type="text"
+                name=""
+                id="name"
+                placeholder="Введите ваше имя"
+              />
+            </div>
 
-        <tr>
-          <td>Epam</td>
-          <td>Java Lab</td>
-        </tr>
-      </tbody>
-    </table>
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input
+                type="email"
+                name=""
+                id="email"
+                placeholder="Введите ваш email"
+              />
+            </div>
+          </div>
 
-    <hr size="4" width="300" color="yellow" align="left" />
+          <div class="form-group">
+            <label for="comment">Ваш комментарий:</label>
+            <textarea name="" id="comment" cols="30" rows="4"></textarea>
+          </div>
 
-    <h2>Опыт работы</h2>
-    <table border="2">
-      <thead>
-        <tr>
-          <th scope="col">Организация</th>
-          <th scope="col">Должность</th>
-          <th scope="col">Период</th>
-        </tr>
-      </thead>
+          <input class="btn" type="submit" value="Связаться" />
+        </form>
+      </div>
 
-      <tbody>
-        <tr>
-          <td>Epam</td>
-          <td>Junior Software Engineer</td>
-          <td>01.11.2021 - Текущий день</td>
-        </tr>
-      </tbody>
-    </table>
+      <!-- <div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> -->
 
-    <hr size="4" width="300" color="yellow" align="left" />
+      <!-- <div class="position">
+        <div class="box"></div>
+      </div> -->
 
-    <h2>Связаться со мной</h2>
-    <form>
-      <label for="name">Ваше имя</label>
-      <input type="text" name="" id="name" placeholder="Введите ваше имя" />
-
-      <br />
-
-      <label for="email">Ваш email</label>
-      <input type="email" name="" id="email" placeholder="Введите ваш email" />
-
-      <br />
-
-      <label for="comment">Ваш комментарий:</label>
-      <br />
-      <textarea name="" id="comment" cols="30" rows="10"></textarea>
-
-      <br />
-
-      <input type="submit" name="" value="Связаться" id="" />
-    </form>
-
-    <hr size="4" width="300" color="yellow" align="left" />
+      <div style="margin-bottom: 250px"></div>
+    </div>
   </body>
 </html>
